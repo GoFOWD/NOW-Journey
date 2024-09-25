@@ -8,13 +8,32 @@ h1 {
     margin-bottom: 0px;
     margin-top: 10px;
 }
+#button_1 {
+    position: sticky;
+    top: 10px;
+    width: 109px;
+    height: 50px;
+    margin-left: 5px;
+    background-color: #B0BEC5;
+    border: 0.5px;
+    border-radius: 20%;
+}
+/*
+#button_1 {
+    width: 109px;
+    height: 50px;
+    margin-left: 5px;
+    background-color: #B0BEC5;
+    border: none;
+}
+*/
 a {
     color:black;
     text-decoration-line:none;
 }
 #grid{
     display: grid;
-    grid-template-columns: 120.67px 1fr
+    grid-template-columns: 120.67px 1fr;
 }
 ul {     
     border-right: 1px solid gray;
@@ -27,7 +46,8 @@ li {
     margin: 10px 0;
 }
 #article {
-    padding-left: 20px
+    padding-left: 20px;
+    padding-right: 20px;
 }
 #map{
     color: green;
