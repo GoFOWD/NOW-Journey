@@ -15,36 +15,16 @@
         <title>지금, 여행</title>   
         <link rel="stylesheet" href="style.css"> 
     </head>
-    <body>
+    <body id="contents">
         <h1 style="display: flex; justify-content: center;"><a href="index.html" title="홈">지금, 여행</a></h1>
         <div id="grid">  
-            <div>        
+            <div id="list_button">        
                 <ul>
                     <li><a href="https://map.naver.com/p/" target="_blank" title="네이버 지도" id="map">지도</a></li>
                     <li><a href="https://www.lotterentacar.net/" target="_blank" title="롯데 렌터카" id="car_rent">렌트</a></li>
                     <li><a href="https://www.yanolja.com/" target="_blank" title="야놀자" id="hotel">숙박</a></li>
                 </ul>
-                <input type="button" value="Night" id="button_1" onclick="
-                var selector = document.querySelector('body');
-                if(this.value === 'Night'){
-                    selector.style.backgroundColor='#202124';
-                    document.getElementById('button_1').value='Day';
-                    selector.style.color='white';
-                    document.querySelector('h1 a').style.color='white';
-                    document.getElementById('button_1').style.boxShadow='5px 5px 5px -5px black';
-                    document.getElementById('button_1').style.backgroundColor='#424242';
-                    document.getElementById('button_1').style.color='white';
-                }
-                else{
-                    selector.style.backgroundColor='white';
-                    document.getElementById('button_1').value='Night';
-                    selector.style.color='black';
-                    document.querySelector('h1 a').style.color='black';
-                    document.getElementById('button_1').style.boxShadow='5px 5px 5px -5px gray';
-                    document.getElementById('button_1').style.backgroundColor='#FAFAFA';
-                    document.getElementById('button_1').style.color='black';
-                }
-                ">
+                <input type="button" value="Night" id="button_1" onclick = DayNightButton(this);>
             </div>  
             <div id="article">
                 <p style="display: flex; justify-content: center;">
@@ -109,5 +89,6 @@
         </script>
         <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
         <script id="dsq-count-scr" src="//now-journey.disqus.com/count.js" async></script>
+        <script src = 'button.js'></script>
     </body>
 </html>
